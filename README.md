@@ -1,25 +1,18 @@
-This is the [assistant-ui](https://github.com/Yonom/assistant-ui) starter project.
+# RAG-Enabled LLM for aelf Documentation
 
-## Getting Started
+## Introduction
+## Demo
+## Problem Statement
+## Vertex AI Search
+## Grounding With Vertex AI Search
 
-First, add your OpenAI API key to `.env.local` file:
+## Personal Statement
+Describes what your tool does and the problem it solves.
+Explains how the tool works technically and how it integrates AI technology and GCP features.
+Provides clear instructions on how to set up and use the tool.
 
-```
-OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-```
+## Tools
+- [Vertex AI Search](https://cloud.google.com/enterprise-search?hl=en#build-google-quality-search-for-your-own-data-in-hours-not-months)
+- [Gemini Code Assist](https://cloud.google.com/products/gemini/code-assist?hl=en)
 
-Then, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## TODO

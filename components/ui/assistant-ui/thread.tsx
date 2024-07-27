@@ -10,7 +10,7 @@ import {
 } from "@assistant-ui/react";
 import type { FC } from "react";
 
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import {
   ArrowDownIcon,
@@ -68,9 +68,14 @@ const ThreadWelcome: FC = () => {
     <ThreadPrimitive.Empty>
       <div className="flex flex-grow basis-full flex-col items-center justify-center">
         <Avatar>
+          <AvatarImage src="/aelf.png" />
           <AvatarFallback>C</AvatarFallback>
         </Avatar>
-        <p className="mt-4 font-medium">How can I help you today?</p>
+        <p className="mt-4 font-medium">
+          Want to build on{" "}
+          <span className="text-xl font-bold italic">Aelf</span>, How can i
+          help?
+        </p>
       </div>
     </ThreadPrimitive.Empty>
   );
@@ -78,10 +83,10 @@ const ThreadWelcome: FC = () => {
 
 const Composer: FC = () => {
   return (
-    <ComposerPrimitive.Root className="relative flex w-full items-end rounded-lg border transition-shadow focus-within:shadow-sm">
+    <ComposerPrimitive.Root className="relative z-10 flex w-full items-end rounded-lg border transition-shadow focus-within:shadow-sm">
       <ComposerPrimitive.Input
         autoFocus
-        placeholder="Write a message..."
+        placeholder="What is Aelf?"
         rows={1}
         className="placeholder:text-muted-foreground size-full max-h-40 resize-none bg-transparent p-4 pr-12 text-sm outline-none"
       />
@@ -156,6 +161,7 @@ const AssistantMessage: FC = () => {
   return (
     <MessagePrimitive.Root className="relative grid w-full max-w-2xl grid-cols-[auto_auto_1fr] grid-rows-[auto_1fr] py-4">
       <Avatar className="col-start-1 row-span-full row-start-1 mr-4">
+        <AvatarImage src="/aelf.png" />
         <AvatarFallback>A</AvatarFallback>
       </Avatar>
 

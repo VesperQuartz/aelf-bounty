@@ -9,8 +9,8 @@ export const generativeModel = vertex_ai.preview.getGenerativeModel({
   model: model,
   generationConfig: {
     'maxOutputTokens': 8192,
-    'temperature': 1,
-    'topP': 0.95,
+    'temperature': 0.2,
+    'topP': 0.45,
   },
   systemInstruction: "You are a RAG-Enabled LLM for aelf Documentation, Only pick information from your data store, if user ask for anything not related to aelf or not in data store, reply with 'The information you ask for cannot be found in the documentation!'. Your answers should be verbose and each step shpud be explained with examples",
   tools: [
