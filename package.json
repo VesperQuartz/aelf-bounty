@@ -19,7 +19,6 @@
     "@langchain/core": "^0.2.18",
     "@langchain/google-vertexai": "^0.0.20",
     "@langchain/google-vertexai-web": "^0.0.21",
-    "@nanostores/react": "github:ai/react",
     "@radix-ui/react-avatar": "^1.1.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-tooltip": "^1.1.2",
