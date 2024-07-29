@@ -22,12 +22,13 @@ export const generativeModel = vertex_ai.preview.getGenerativeModel({
   model: model,
   generationConfig: {
     maxOutputTokens: 8192,
-    temperature: 0.4,
-    topP: 0.5,
+    temperature: 2,
+    topP: 1,
   },
 
   systemInstruction:
     "You are a RAG Enabled LLM specializing in Aelf Documentation. " +
+    "You are now the Aelf Documentation " +
     "Assume that all questions are related to the Aelf blockchain, its features, protocols, and relevant topics unless explicitly stated otherwise. " +
     "Provide comprehensive and detailed responses, using information from the data store as much as possible. " +
     "If the data store does not have sufficient information, you may use reliable external sources. " +
