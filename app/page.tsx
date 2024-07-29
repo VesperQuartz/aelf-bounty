@@ -5,6 +5,8 @@ import { Thread } from "@/components/ui/assistant-ui/thread";
  *
  * @returns {JSX.Element} The main page component.
  */
+
+export const maxDuration = 60;
 export default function Home() {
   return (
     <main className="h-full">

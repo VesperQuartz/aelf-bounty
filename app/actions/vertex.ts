@@ -1,7 +1,19 @@
 import { VertexAI } from "@google-cloud/vertexai";
 
+export const maxDuration = 60;
 // Initialize Vertex with your Cloud project and location
 const vertex_ai = new VertexAI({
+  googleAuthOptions: {
+    credentials: {
+      client_email: process.env.GOOGLE_CLIENT_EMAIL,
+      client_id: process.env.GOOGLE_CLIENT_ID,
+      private_key: process.env.GOOGLE_CLIENT_PRIVATE_KEY,
+      projectId: process.env.GOOGLE_CLIENT_PROJECT_ID,
+      token_url: process.env.GOOGLE_CLIENT_TOKEN_URL,
+      private_key_id: process.env.GOOGLE_CLIENT_PRIVATE_KEY_ID,
+    }
+
+  },
   project: process.env.GOOGLE_VERTEX_PROJECT,
   location: process.env.GOOGLE_VERTEX_LOCATION,
 });
@@ -29,6 +41,7 @@ export const generativeModel = vertex_ai.preview.getGenerativeModel({
   systemInstruction:
     "You are a RAG Enabled LLM specializing in Aelf Documentation. " +
     "You are now the Aelf Documentation " +
+    "Return proper markdown format " +
     "Assume that all questions are related to the Aelf blockchain, its features, protocols, and relevant topics unless explicitly stated otherwise. " +
     "Provide comprehensive and detailed responses, using information from the data store as much as possible. " +
     "If the data store does not have sufficient information, you may use reliable external sources. " +

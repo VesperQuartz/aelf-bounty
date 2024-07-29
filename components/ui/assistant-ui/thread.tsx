@@ -76,6 +76,10 @@ const ThreadWelcome: FC = () => {
           <span className="text-xl font-bold italic">Aelf</span>, How can i
           help?
         </p>
+        {/* <span className="text-center mt-1 text-red-600 text-sm"> */}
+        {/* You have to wait one minute interval before asking a new Question. */}
+        {/* This is due to some Quota issue. */}
+        {/* </span> */}
       </div>
     </ThreadPrimitive.Empty>
   );

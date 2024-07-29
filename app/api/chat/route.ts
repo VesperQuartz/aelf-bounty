@@ -12,6 +12,7 @@ type IMessage = {
   createdAt: string;
 }
 
+export const maxDuration = 60;
 const getLastMessage = (messages: IMessage) => {
   return messages.messages[messages.messages.length - 1].content[0].text;
 }

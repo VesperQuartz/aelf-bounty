@@ -10,6 +10,9 @@ import { generateContent } from "./actions/action";
  * @param abortSignal An AbortSignal that can be used to cancel the request.
  * @returns An object containing the generated content.
  */
+
+export const maxDuration = 60;
+
 export const MyModelAdapter: ChatModelAdapter = {
   async run({ messages, abortSignal }) {
     const result = (await fetch("/api/chat", {
