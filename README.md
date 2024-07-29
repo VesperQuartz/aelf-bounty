@@ -3,7 +3,7 @@
 ## Demo
 
 ## Deployment Link
-[Web App](https://aelf-bounty.onrender.com)
+[Web App](https://aelf.mooo.com/)
 
 ## Introduction
 
@@ -49,7 +49,7 @@ tools: [
 ```
 ## How to Use
 
-Go to the [Web App](https://aelf-bounty.onrender.com) and input your prompt. You can start with something simple like, "What is Aelf?" or "How to create a smart contract in Aelf?".
+Go to the [Web App](https://aelf.mooo.com/) and input your prompt. You can start with something simple like, "What is Aelf?" or "How to create a smart contract in Aelf?".
 
 ## Tools
 - [Vertex AI Search](https://cloud.google.com/enterprise-search?hl=en#build-google-quality-search-for-your-own-data-in-hours-not-months)
