@@ -1,37 +1,17 @@
 "use client";
 
-import {
-  AssistantRuntimeProvider,
-  useLocalRuntime,
-  type ChatModelAdapter,
-} from "@assistant-ui/react";
+import { AssistantRuntimeProvider, useLocalRuntime } from "@assistant-ui/react";
+import { MyModelAdapter } from "./Chat";
 
-const MyModelAdapter: ChatModelAdapter = {
-  async run({ messages, abortSignal }) {
-    const result = (await fetch("/api/chat", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      // forward the messages in the chat to the API
-      body: JSON.stringify({
-        messages,
-      }),
-      // if the user hits the "cancel" button or escape keyboard key, cancel the request
-      signal: abortSignal,
-    })) as any;
-    const data = await result.json();
-    return {
-      content: [
-        {
-          type: "text",
-          text: data.text,
-        },
-      ],
-    };
-  },
-};
-
+/**
+ * Provides the runtime context for the Assistant UI components.
+ *
+ * This component wraps the children with the `AssistantRuntimeProvider`, which
+ * makes the runtime available to the Assistant UI components throughout the
+ * component tree.
+ *
+ * @param children - The React nodes to render within the runtime provider.
+ */
 export function MyRuntimeProvider({
   children,
 }: Readonly<{

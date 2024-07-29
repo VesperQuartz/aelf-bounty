@@ -11,8 +11,8 @@
   "dependencies": {
     "@ai-sdk/google-vertex": "^0.0.18",
     "@ai-sdk/openai": "^0.0.36",
-    "@assistant-ui/react": "^0.5.15",
-    "@assistant-ui/react-ai-sdk": "^0.5.8",
+    "@assistant-ui/react": "^0.5.17",
+    "@assistant-ui/react-ai-sdk": "^0.5.9",
     "@assistant-ui/react-markdown": "^0.2.5",
     "@assistant-ui/react-syntax-highlighter": "^0.0.6",
     "@google-cloud/vertexai": "^1.4.0",
@@ -26,7 +26,6 @@
     "ai": "^3.2.37",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "http": "0.0.1-security",
     "langchain": "^0.2.11",
     "lucide-react": "^0.414.0",
     "next": "14.2.5",
@@ -36,12 +35,13 @@
     "rehype-katex": "^7.0.0",
     "remark-gfm": "^4.0.0",
     "remark-math": "^6.0.0",
+    "server-only": "^0.0.1",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@types/node": "^20.14.12",
+    "@types/node": "^20.14.13",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "eslint": "^8.57.0",
