@@ -5,6 +5,7 @@
 
 https://github.com/user-attachments/assets/4f6a9b10-8766-4e15-9a8b-c251700a3b8a
 
+If the Video doesn't play please use a Chromium based browser!
 
 ## Deployment Link
 [Web App](https://aelf.mooo.com/)
