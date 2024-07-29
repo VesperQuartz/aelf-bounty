@@ -1,4 +1,4 @@
-# RAG-Enabled LLM for aelf Documentation
+# RAG Enabled LLM for aelf Documentation
 
 ## Demo
 
@@ -9,9 +9,9 @@
 
 Maintaining accurate and readily available documentation is crucial in the domain of blockchain technology, as it benefits both developers and users. The "Rag Enabled LLM for Aelf Documentation" initiative aims to enhance the documentation process for the Aelf blockchain platform by leveraging advanced AI tools.
 
-This project combines Retrieval-Augmented Generation with a Language Model, utilizing Vertex AI and Gemini. The RAG system retrieves relevant information from various sources, while the LLM generates clear and concise explanations. This combination helps ensure that the documentation is comprehensive, upto date, and easily understandable.
+This project combines Retrieval Augmented Generation with a Language Model, utilizing Vertex AI and Gemini. The RAG system retrieves relevant information from various sources, while the LLM generates clear and concise explanations. This combination helps ensure that the documentation is comprehensive, upto date, and easily understandable.
 
-The goal of this project is to create a tool that assists both experienced developers and newcomers in easily finding and comprehending information about the Aelf blockchain. By making the documentation more user-friendly and accessible, the "Rag Enabled LLM for Aelf Documentation" project aspires to become a valuable resource for the Aelf community.
+The goal of this project is to create a tool that assists both experienced developers and newcomers in easily finding and comprehending information about the Aelf blockchain. By making the documentation more user friendly and accessible.
 
 ## Vertex AI Search
 
@@ -32,7 +32,8 @@ Grounding provides the following benefits:
 ### How Data is being Grounded for the Web App
 
 The Data that is used for grounding the model is gotton from [Aelf Documentation](https://github.com/AElfProject/aelf-docs/tree/develop/docs). The data is then indexed using Vertex AI Search.
-The indexed data is then used to train the model. After training is complete we can now use it in code like.
+The indexed data is then used to train the model. After training is complete we can now use it in code like. This way the data store is
+always being used to provide users with the most accurate information.
 
 ```typescript
 tools: [
