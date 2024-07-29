@@ -11,6 +11,10 @@ export const generateContent = async (text: string) => {
   const req = {
     contents: [{ role: "user", parts: [{ text }] }],
   };
-  const streamingResp = await generativeModel.generateContent(req);
-  return streamingResp.response;
+  try {
+    const streamingResp = await generativeModel.generateContent(req);
+    return streamingResp.response;
+  } catch (error) {
+    console.error(error)
+  }
 };

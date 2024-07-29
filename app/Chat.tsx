@@ -28,7 +28,12 @@ export const MyModelAdapter: ChatModelAdapter = {
     const data = await result.json();
     const outputStream = await generateContent(data.input);
 
-    let text = outputStream.candidates?.[0].content.parts[0].text;
+    let text = "";
+    if (outputStream) {
+      text = outputStream.candidates?.[0].content.parts[0].text!;
+    } else {
+      text = "No response from the model";
+    }
     console.log(text);
     return {
       content: [
